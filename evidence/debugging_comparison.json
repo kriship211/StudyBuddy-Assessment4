@@ -1,0 +1,50 @@
+[
+  {
+    "request": "Classify report priority",
+    "original_result": {
+      "answer": "'Submit final report' is Medium priority because it is due within one week.",
+      "action": "classify_priority",
+      "confidence": 0.85
+    },
+    "revised_plan": {
+      "action": "general",
+      "task_id": null,
+      "title": "Requested task",
+      "due_in_days": null,
+      "blocking": false,
+      "clarification": "Please give a non-negative deadline in days, for example: classify report due in 2 days."
+    }
+  },
+  {
+    "request": "Classify report due in 10 days, not blocking",
+    "original_result": {
+      "answer": "'Submit final report' is High priority because it is blocking other work or is due within two days.",
+      "action": "classify_priority",
+      "confidence": 0.85
+    },
+    "revised_plan": {
+      "action": "classify_priority",
+      "task_id": null,
+      "title": "Classify report due in 10 days, not blocking",
+      "due_in_days": 10,
+      "blocking": false,
+      "clarification": ""
+    }
+  },
+  {
+    "request": "Classify report due in -2 days",
+    "original_result": {
+      "answer": "'Submit final report' is High priority because it is blocking other work or is due within two days.",
+      "action": "classify_priority",
+      "confidence": 0.85
+    },
+    "revised_plan": {
+      "action": "general",
+      "task_id": null,
+      "title": "Requested task",
+      "due_in_days": null,
+      "blocking": false,
+      "clarification": "Please give a non-negative deadline in days, for example: classify report due in 2 days."
+    }
+  }
+]

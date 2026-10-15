@@ -1,0 +1,44 @@
+[
+  {
+    "case": "summary",
+    "status": "completed",
+    "steps": 3,
+    "run_id": "075160b9-f279-4562-ab1e-cec68027bfb6"
+  },
+  {
+    "case": "lookup",
+    "status": "completed",
+    "steps": 3,
+    "run_id": "38c9a914-6110-4225-b4b9-e80bc1997bbf"
+  },
+  {
+    "case": "priority",
+    "status": "completed",
+    "steps": 3,
+    "run_id": "beea72c4-a42f-4aec-86e8-8e41fb27534d"
+  },
+  {
+    "case": "timeout",
+    "status": "fallback",
+    "steps": 2,
+    "run_id": "03dee925-14d9-41fe-b05a-8cfed01879f5"
+  },
+  {
+    "case": "invalid_output",
+    "status": "fallback",
+    "steps": 2,
+    "run_id": "6180091b-84fa-4d4b-b99c-a81b055aa193"
+  },
+  {
+    "case": "invalid_receiver",
+    "status": "fallback",
+    "steps": 1,
+    "run_id": "360af67a-6fea-405b-a4aa-1dfb7042b7f1"
+  },
+  {
+    "case": "iteration_limit",
+    "status": "fallback",
+    "steps": 4,
+    "run_id": "04a6802e-d58d-4ea7-837e-d92f13530f3f"
+  }
+]

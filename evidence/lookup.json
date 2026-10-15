@@ -1,0 +1,156 @@
+{
+  "run_id": "38c9a914-6110-4225-b4b9-e80bc1997bbf",
+  "status": "completed",
+  "mode": "local",
+  "result": {
+    "answer": "Task 1 ('Finish AI assessment report') is due on 2026-09-25. Priority: High. Status: Pending.",
+    "action": "lookup_task",
+    "used_tool": "lookup_task"
+  },
+  "steps": 3,
+  "events": [
+    {
+      "timestamp": "2026-10-15T02:32:39.516530+00:00",
+      "run_id": "38c9a914-6110-4225-b4b9-e80bc1997bbf",
+      "event": "RUN_START",
+      "mode": "local",
+      "scenario": "normal",
+      "max_steps": 4
+    },
+    {
+      "timestamp": "2026-10-15T02:32:39.516581+00:00",
+      "run_id": "38c9a914-6110-4225-b4b9-e80bc1997bbf",
+      "event": "SENT",
+      "message": {
+        "run_id": "38c9a914-6110-4225-b4b9-e80bc1997bbf",
+        "step": 1,
+        "sender": "orchestrator",
+        "receiver": "planner",
+        "intent": "plan",
+        "content": {
+          "message": "When is task 1 due?"
+        },
+        "constraints": {
+          "format": "json",
+          "read_only": true
+        }
+      }
+    },
+    {
+      "timestamp": "2026-10-15T02:32:39.516618+00:00",
+      "run_id": "38c9a914-6110-4225-b4b9-e80bc1997bbf",
+      "event": "RECEIVED",
+      "message": {
+        "run_id": "38c9a914-6110-4225-b4b9-e80bc1997bbf",
+        "step": 1,
+        "sender": "orchestrator",
+        "receiver": "planner",
+        "intent": "plan",
+        "content": {
+          "message": "When is task 1 due?"
+        },
+        "constraints": {
+          "format": "json",
+          "read_only": true
+        }
+      }
+    },
+    {
+      "timestamp": "2026-10-15T02:32:39.516811+00:00",
+      "run_id": "38c9a914-6110-4225-b4b9-e80bc1997bbf",
+      "event": "SENT",
+      "message": {
+        "run_id": "38c9a914-6110-4225-b4b9-e80bc1997bbf",
+        "step": 2,
+        "sender": "planner",
+        "receiver": "worker",
+        "intent": "execute",
+        "content": {
+          "action": "lookup_task",
+          "task_id": 1,
+          "title": "Requested task",
+          "due_in_days": null,
+          "blocking": false,
+          "clarification": ""
+        },
+        "constraints": {
+          "format": "json",
+          "read_only": true
+        }
+      }
+    },
+    {
+      "timestamp": "2026-10-15T02:32:39.516875+00:00",
+      "run_id": "38c9a914-6110-4225-b4b9-e80bc1997bbf",
+      "event": "RECEIVED",
+      "message": {
+        "run_id": "38c9a914-6110-4225-b4b9-e80bc1997bbf",
+        "step": 2,
+        "sender": "planner",
+        "receiver": "worker",
+        "intent": "execute",
+        "content": {
+          "action": "lookup_task",
+          "task_id": 1,
+          "title": "Requested task",
+          "due_in_days": null,
+          "blocking": false,
+          "clarification": ""
+        },
+        "constraints": {
+          "format": "json",
+          "read_only": true
+        }
+      }
+    },
+    {
+      "timestamp": "2026-10-15T02:32:39.516935+00:00",
+      "run_id": "38c9a914-6110-4225-b4b9-e80bc1997bbf",
+      "event": "SENT",
+      "message": {
+        "run_id": "38c9a914-6110-4225-b4b9-e80bc1997bbf",
+        "step": 3,
+        "sender": "worker",
+        "receiver": "orchestrator",
+        "intent": "result",
+        "content": {
+          "answer": "Task 1 ('Finish AI assessment report') is due on 2026-09-25. Priority: High. Status: Pending.",
+          "action": "lookup_task",
+          "used_tool": "lookup_task"
+        },
+        "constraints": {
+          "format": "json",
+          "read_only": true
+        }
+      }
+    },
+    {
+      "timestamp": "2026-10-15T02:32:39.516973+00:00",
+      "run_id": "38c9a914-6110-4225-b4b9-e80bc1997bbf",
+      "event": "RECEIVED",
+      "message": {
+        "run_id": "38c9a914-6110-4225-b4b9-e80bc1997bbf",
+        "step": 3,
+        "sender": "worker",
+        "receiver": "orchestrator",
+        "intent": "result",
+        "content": {
+          "answer": "Task 1 ('Finish AI assessment report') is due on 2026-09-25. Priority: High. Status: Pending.",
+          "action": "lookup_task",
+          "used_tool": "lookup_task"
+        },
+        "constraints": {
+          "format": "json",
+          "read_only": true
+        }
+      }
+    },
+    {
+      "timestamp": "2026-10-15T02:32:39.517002+00:00",
+      "run_id": "38c9a914-6110-4225-b4b9-e80bc1997bbf",
+      "event": "RUN_END",
+      "status": "completed",
+      "steps": 3
+    }
+  ]
+}

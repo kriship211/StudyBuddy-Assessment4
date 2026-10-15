@@ -1,0 +1,156 @@
+{
+  "run_id": "beea72c4-a42f-4aec-86e8-8e41fb27534d",
+  "status": "completed",
+  "mode": "local",
+  "result": {
+    "answer": "'Classify report due in 2 days, blocking other work' is High priority because it is blocking other work or is due within two days.",
+    "action": "classify_priority",
+    "used_tool": "classify_priority"
+  },
+  "steps": 3,
+  "events": [
+    {
+      "timestamp": "2026-10-15T02:32:39.517207+00:00",
+      "run_id": "beea72c4-a42f-4aec-86e8-8e41fb27534d",
+      "event": "RUN_START",
+      "mode": "local",
+      "scenario": "normal",
+      "max_steps": 4
+    },
+    {
+      "timestamp": "2026-10-15T02:32:39.517250+00:00",
+      "run_id": "beea72c4-a42f-4aec-86e8-8e41fb27534d",
+      "event": "SENT",
+      "message": {
+        "run_id": "beea72c4-a42f-4aec-86e8-8e41fb27534d",
+        "step": 1,
+        "sender": "orchestrator",
+        "receiver": "planner",
+        "intent": "plan",
+        "content": {
+          "message": "Classify report due in 2 days, blocking other work"
+        },
+        "constraints": {
+          "format": "json",
+          "read_only": true
+        }
+      }
+    },
+    {
+      "timestamp": "2026-10-15T02:32:39.517282+00:00",
+      "run_id": "beea72c4-a42f-4aec-86e8-8e41fb27534d",
+      "event": "RECEIVED",
+      "message": {
+        "run_id": "beea72c4-a42f-4aec-86e8-8e41fb27534d",
+        "step": 1,
+        "sender": "orchestrator",
+        "receiver": "planner",
+        "intent": "plan",
+        "content": {
+          "message": "Classify report due in 2 days, blocking other work"
+        },
+        "constraints": {
+          "format": "json",
+          "read_only": true
+        }
+      }
+    },
+    {
+      "timestamp": "2026-10-15T02:32:39.517570+00:00",
+      "run_id": "beea72c4-a42f-4aec-86e8-8e41fb27534d",
+      "event": "SENT",
+      "message": {
+        "run_id": "beea72c4-a42f-4aec-86e8-8e41fb27534d",
+        "step": 2,
+        "sender": "planner",
+        "receiver": "worker",
+        "intent": "execute",
+        "content": {
+          "action": "classify_priority",
+          "task_id": null,
+          "title": "Classify report due in 2 days, blocking other work",
+          "due_in_days": 2,
+          "blocking": true,
+          "clarification": ""
+        },
+        "constraints": {
+          "format": "json",
+          "read_only": true
+        }
+      }
+    },
+    {
+      "timestamp": "2026-10-15T02:32:39.517636+00:00",
+      "run_id": "beea72c4-a42f-4aec-86e8-8e41fb27534d",
+      "event": "RECEIVED",
+      "message": {
+        "run_id": "beea72c4-a42f-4aec-86e8-8e41fb27534d",
+        "step": 2,
+        "sender": "planner",
+        "receiver": "worker",
+        "intent": "execute",
+        "content": {
+          "action": "classify_priority",
+          "task_id": null,
+          "title": "Classify report due in 2 days, blocking other work",
+          "due_in_days": 2,
+          "blocking": true,
+          "clarification": ""
+        },
+        "constraints": {
+          "format": "json",
+          "read_only": true
+        }
+      }
+    },
+    {
+      "timestamp": "2026-10-15T02:32:39.517701+00:00",
+      "run_id": "beea72c4-a42f-4aec-86e8-8e41fb27534d",
+      "event": "SENT",
+      "message": {
+        "run_id": "beea72c4-a42f-4aec-86e8-8e41fb27534d",
+        "step": 3,
+        "sender": "worker",
+        "receiver": "orchestrator",
+        "intent": "result",
+        "content": {
+          "answer": "'Classify report due in 2 days, blocking other work' is High priority because it is blocking other work or is due within two days.",
+          "action": "classify_priority",
+          "used_tool": "classify_priority"
+        },
+        "constraints": {
+          "format": "json",
+          "read_only": true
+        }
+      }
+    },
+    {
+      "timestamp": "2026-10-15T02:32:39.517785+00:00",
+      "run_id": "beea72c4-a42f-4aec-86e8-8e41fb27534d",
+      "event": "RECEIVED",
+      "message": {
+        "run_id": "beea72c4-a42f-4aec-86e8-8e41fb27534d",
+        "step": 3,
+        "sender": "worker",
+        "receiver": "orchestrator",
+        "intent": "result",
+        "content": {
+          "answer": "'Classify report due in 2 days, blocking other work' is High priority because it is blocking other work or is due within two days.",
+          "action": "classify_priority",
+          "used_tool": "classify_priority"
+        },
+        "constraints": {
+          "format": "json",
+          "read_only": true
+        }
+      }
+    },
+    {
+      "timestamp": "2026-10-15T02:32:39.517832+00:00",
+      "run_id": "beea72c4-a42f-4aec-86e8-8e41fb27534d",
+      "event": "RUN_END",
+      "status": "completed",
+      "steps": 3
+    }
+  ]
+}

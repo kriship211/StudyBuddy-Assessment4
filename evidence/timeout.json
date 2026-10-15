@@ -1,0 +1,131 @@
+{
+  "run_id": "03dee925-14d9-41fe-b05a-8cfed01879f5",
+  "status": "fallback",
+  "mode": "local",
+  "result": {
+    "answer": "The request could not be completed safely. No task data was changed. Check the trace and try a normal request.",
+    "action": "fallback",
+    "used_tool": null
+  },
+  "steps": 2,
+  "events": [
+    {
+      "timestamp": "2026-10-15T02:32:39.518061+00:00",
+      "run_id": "03dee925-14d9-41fe-b05a-8cfed01879f5",
+      "event": "RUN_START",
+      "mode": "local",
+      "scenario": "timeout",
+      "max_steps": 4
+    },
+    {
+      "timestamp": "2026-10-15T02:32:39.518104+00:00",
+      "run_id": "03dee925-14d9-41fe-b05a-8cfed01879f5",
+      "event": "SENT",
+      "message": {
+        "run_id": "03dee925-14d9-41fe-b05a-8cfed01879f5",
+        "step": 1,
+        "sender": "orchestrator",
+        "receiver": "planner",
+        "intent": "plan",
+        "content": {
+          "message": "Summarise tasks"
+        },
+        "constraints": {
+          "format": "json",
+          "read_only": true
+        }
+      }
+    },
+    {
+      "timestamp": "2026-10-15T02:32:39.518135+00:00",
+      "run_id": "03dee925-14d9-41fe-b05a-8cfed01879f5",
+      "event": "RECEIVED",
+      "message": {
+        "run_id": "03dee925-14d9-41fe-b05a-8cfed01879f5",
+        "step": 1,
+        "sender": "orchestrator",
+        "receiver": "planner",
+        "intent": "plan",
+        "content": {
+          "message": "Summarise tasks"
+        },
+        "constraints": {
+          "format": "json",
+          "read_only": true
+        }
+      }
+    },
+    {
+      "timestamp": "2026-10-15T02:32:39.518181+00:00",
+      "run_id": "03dee925-14d9-41fe-b05a-8cfed01879f5",
+      "event": "SENT",
+      "message": {
+        "run_id": "03dee925-14d9-41fe-b05a-8cfed01879f5",
+        "step": 2,
+        "sender": "planner",
+        "receiver": "worker",
+        "intent": "execute",
+        "content": {
+          "action": "summarise_tasks",
+          "task_id": null,
+          "title": "Requested task",
+          "due_in_days": null,
+          "blocking": false,
+          "clarification": ""
+        },
+        "constraints": {
+          "format": "json",
+          "read_only": true
+        }
+      }
+    },
+    {
+      "timestamp": "2026-10-15T02:32:39.518219+00:00",
+      "run_id": "03dee925-14d9-41fe-b05a-8cfed01879f5",
+      "event": "RECEIVED",
+      "message": {
+        "run_id": "03dee925-14d9-41fe-b05a-8cfed01879f5",
+        "step": 2,
+        "sender": "planner",
+        "receiver": "worker",
+        "intent": "execute",
+        "content": {
+          "action": "summarise_tasks",
+          "task_id": null,
+          "title": "Requested task",
+          "due_in_days": null,
+          "blocking": false,
+          "clarification": ""
+        },
+        "constraints": {
+          "format": "json",
+          "read_only": true
+        }
+      }
+    },
+    {
+      "timestamp": "2026-10-15T02:32:39.618634+00:00",
+      "run_id": "03dee925-14d9-41fe-b05a-8cfed01879f5",
+      "event": "ERROR",
+      "error_type": "timeout",
+      "reason": "Agent execution or routing failed; inspect scenario and step."
+    },
+    {
+      "timestamp": "2026-10-15T02:32:39.618890+00:00",
+      "run_id": "03dee925-14d9-41fe-b05a-8cfed01879f5",
+      "event": "FALLBACK",
+      "result": {
+        "answer": "The request could not be completed safely. No task data was changed. Check the trace and try a normal request.",
+        "action": "fallback",
+        "used_tool": null
+      }
+    },
+    {
+      "timestamp": "2026-10-15T02:32:39.618944+00:00",
+      "run_id": "03dee925-14d9-41fe-b05a-8cfed01879f5",
+      "event": "RUN_END",
+      "status": "fallback",
+      "steps": 2
+    }
+  ]
+}
